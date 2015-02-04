@@ -1,12 +1,35 @@
 CSH Members Portal Icons
 ========================
-A CSS sprite sheet for the CSH member's portal.
+A CSS sprite sheet of icons for the CSH member's portal. Now in SVG!
 
 Usage
 -----
-Include either of the .css files in your page, as well as the corresponding images. The \_72 and \_144 refer to the max size in pixels of the sprites. Refer to the example (index.html) to see them in action.
+1) Download the project and add the `css` and `img` directories to your project.
 
-Icons aren't responsive, but they will scale between 24px and 72px/144px (depending on which you chose). Assign the icons their own width and height by adding your own styles to the .icon class, or do your own thing. Make sure the widths and heights match!
+2) Include either of the .css files on your page. This will add the base styles and load in the sprite sheet.
+
+```html
+<link rel="stylesheet" href="./members-icons/css/members_icons.css">
+```
+
+3) Add a bit of CSS to your project to style/size the icons.
+
+```css
+/* Make icons 64x64 pixels and centered in their containers */
+.icon {
+  width: 64px;
+  height: 64px;
+  margin: auto;
+}
+```
+
+4) Add the following markup (or something similar) to add an icon to the page. Replace "icon-drink" with the class name of the icon you want.
+
+```html
+<div class="icon-box">
+  <div class="icon icon-drink"></div>
+</div>
+```
 
 Attributions
 ------------
@@ -77,3 +100,7 @@ Attributions
 [Frog](http://thenounproject.com/noun/frog/#icon-No3531) designed by [Christian Bonin](http://thenounproject.com/vanenino) from The Noun Project
 
 [Hockey](http://thenounproject.com/noun/hockey/#icon-No19015) designed by [Nithin Viswanathan](http://thenounproject.com/nsteve) from The Noun Project
+
+[Statistics](http://thenounproject.com/noun/statistics/#icon-No6491) designed by [Mateo Zlatar](http://www.thenounproject.com/mateozlatar) from the Noun Project
+
+[Reviewer](http://icons8.com/web-app/for/win8/review) designed by [Icons8](http://icons8.com/)
